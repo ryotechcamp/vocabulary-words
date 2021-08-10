@@ -9,20 +9,14 @@
 | nickname           | string  | null: false               |
 | email              | string  | null: false, unique: true |
 | encrypted_password | string  | null: false               |
-<<<<<<< Updated upstream
 | first_name         | string  | null: false               |
 | last_name          | string  | null: false               |
-=======
-| kanji_first_name   | string  | null: false               |
-| kanji_last_name    | string  | null: false               |
->>>>>>> Stashed changes
 | kana_first_name    | string  | null: false               |
 | kana_last_name     | string  | null: false               |
 | birthday           | date    | null: false               |
 
 ### Association
 
-<<<<<<< Updated upstream
 - has_many :keywords
 - has_many :room_users
 - has_many :rooms, through: :room_users
@@ -77,7 +71,4 @@
 
 - belongs_to :room
 - belongs_to :user
-=======
-- has_many :purchases
-- has_many :displays
->>>>>>> Stashed changes
+
