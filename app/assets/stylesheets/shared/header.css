@@ -1,0 +1,26 @@
+
+.top-page-header {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-icon {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.user-nickname, .logout, .login, .sign-up {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+}
