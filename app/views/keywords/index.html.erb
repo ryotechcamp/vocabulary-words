@@ -21,9 +21,11 @@
         <p class = 'words-details'>プログラミングを学習していると</p>
         <p class = 'words-details'>新しい言葉がどんどん出て頭の中がパンクした経験はありませんか？</p>
         <p class = 'words-details'>そんなあなたに自分の弱点だけをまとめた単語帳であなたの勉強をサポートします</p>
+        <% if user_signed_in? %>
         <div class = 'btn'>
           <%= link_to "入力する", '#', class: "words-enter-btn" %>
         </div>
+        <% end %>
       </div>
     </div>
     <div class = 'rooms-contents'>
@@ -33,15 +35,25 @@
         <p class = 'rooms-details'>大変だった経験したエラーを記録として残しておきたい！</p>
         <p class = 'rooms-details'>同じ目標を持つ仲間とエラーを窮した！</p>
         <p class = 'rooms-details'>そんなあなたに画像、コメントが投稿できるチャットルームをお届けします</p>
+        <% if user_signed_in? %>
         <div class = 'btn'>
           <%= link_to "ルームを作成する", '#', class: "room-enter-btn" %>
         </div>
+        <% end %>
       </div>
       <%= image_tag "meeting.png", class:"meeting-pict" %>
     </div>
   </div>
-  <div class="user-list">
+  <div class="user-lists">
     <h2 class = 'contents-title'>PLAYER</h2>
+    <% @users.each do |user| %>
+      <div class = 'user-list'>
+        <%= image_tag user.photo.variant(resize: '200x300'), class: 'user-photo' %>
+        <div class = "user-nickname">
+        <%= link_to user.nickname, class: 'nickname' %>
+        </div>
+      </div>
+    <% end %>
   </div>
   <div class="room-list">
     <h2 class = 'contents-title'>ROOM</h2>
