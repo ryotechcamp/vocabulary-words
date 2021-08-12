@@ -23,4 +23,6 @@ class User < ApplicationRecord
       validates :kana_last_name
   end
 
+  has_many :keywords
+
 end
