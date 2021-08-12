@@ -4,6 +4,7 @@ class KeywordsController < ApplicationController
   end
 
   def new
+    @keyword = Keyword.new
   end
 
   def create
