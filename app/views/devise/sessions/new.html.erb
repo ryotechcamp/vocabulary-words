@@ -1,6 +1,10 @@
 <%= form_with model: @user, url: user_session_path, class: 'session-main', local: true do |f| %>
   <div class="session-form">
   <h2>ログイン画面</h2>
+  <div class='login-flash-message'>
+    <%= flash[:notice] %>
+    <%= flash[:alert] %>
+  </div>
   <div class="field">
     <div class='form-text-wrap'>
       <label class="form-text">メールアドレス</label>
