@@ -17,6 +17,9 @@ class KeywordsController < ApplicationController
        end
   end
 
+  def show
+  end
+
   private
   def keyword_params
     params.require(:keyword).permit(:word, :genre_id, :instruction).merge(user_id: current_user.id)
