@@ -50,7 +50,7 @@
       <div class = 'user-list'>
         <%= image_tag user.photo.variant(resize: '200x300'), class: 'user-photo' %>
         <div class = "user-nickname">
-        <%= link_to user.nickname, class: 'nickname' %>
+        <%= link_to user.nickname, user_path(user.id), class: 'nickname' %>
         </div>
       </div>
     <% end %>
