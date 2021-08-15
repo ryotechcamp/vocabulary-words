@@ -11,7 +11,7 @@ class KeywordsController < ApplicationController
   def create
     @keyword = Keyword.new(keyword_params)
       if @keyword.save
-        redirect_to root_path
+        redirect_to user_path(current_user.id)
       else
         render :new
        end
