@@ -19,9 +19,8 @@
   list-style: none;
 }
 
-.user-nickname, .logout, .login, .sign-up, .fill-in {
+.user-nickname, .logout, .login, .sign-up {
   text-decoration: none;
   color: black;
   margin-right: 30px;
 }
-
