@@ -23,7 +23,7 @@
         <p class = 'words-details'>そんなあなたに自分の弱点だけをまとめた単語帳であなたの勉強をサポートします</p>
         <% if user_signed_in? %>
         <div class = 'btn'>
-          <%= link_to "入力する", '#', class: "words-enter-btn" %>
+          <%= link_to "入力する", new_keyword_path, class: "words-enter-btn" %>
         </div>
         <% end %>
       </div>

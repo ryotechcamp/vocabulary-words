@@ -1,0 +1,64 @@
+.keyword-new-contents {
+  width: 100%;
+  height: 100vh;
+  background-image: image-url('book.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.keyword-contens-form {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+  background:rgba(255, 255, 255, 0.8);
+}
+
+.keyword-contents-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.form-detail {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+// 共通部分
+.form-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.word-upload, .genre-upload, .instruction-upload, .submit-btn-contents {
+  text-align: center;
+  margin: 30px 0;
+}
+
+// キーワード
+.word-form-area {
+  width: 60%;
+  height: 10%;
+}
+
+// 説明文
+.keyword-instruction {
+  width: 80%;
+  height: 40%;
+}
+
+.submit-btn {
+  width: 30%;
+  height: 40%;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: large;
+}
+
+.back {
+  margin-top: 10px;
+}
+
