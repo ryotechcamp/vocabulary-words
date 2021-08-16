@@ -8,10 +8,10 @@
     TODO will need to remove settings on HTML since we can't namespace it.
     TODO with the prefix, should I group by selector or property for weight savings?
 */
-html{
+/* html{
   color:#000;
   background:#FFF;
-}
+} */
 /*
   TODO remove settings on BODY since we can't namespace it.
 */
@@ -71,16 +71,16 @@ var {
   font-weight:normal;
 }
 
-ol,
+/* ol,
 ul {
   list-style:none;
-}
+} */
 
 caption,
 th {
   text-align:left;
 }
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -88,7 +88,7 @@ h5,
 h6 {
   font-size:100%;
   font-weight:normal;
-}
+} */
 q:before,
 q:after {
   content:'';
