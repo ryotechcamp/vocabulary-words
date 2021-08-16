@@ -17,9 +17,13 @@
     </tr>
     <% @keywords.each do |keyword| %>
     <tr>
-    <td><%= keyword.word %></td>
-    <td><%= keyword.genre.name %></td>
-    <td><%= keyword.instruction %></td>
+    <td class="form-word"><%= keyword.word %></td>
+    <td class="form-genre"><%= keyword.genre.name %></td>
+    <td class="form-instruction">
+      <div class="highlight">
+          <%= markdown(keyword.instruction) %>
+      </div>  
+    </td>
     <td>#</td>
     <td>#</td>
     </tr>
