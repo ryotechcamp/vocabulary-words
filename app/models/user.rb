@@ -24,7 +24,7 @@ class User < ApplicationRecord
   end
 
   has_many :keywords
-  has_many :tests
+  has_many :tests, dependent: :destroy
 
   def tested_by?(keyword_id)
     tests.where(keyword_id: keyword_id).exists?
