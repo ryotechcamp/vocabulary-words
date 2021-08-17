@@ -24,5 +24,6 @@ class User < ApplicationRecord
   end
 
   has_many :keywords
+  has_many :tests
 
 end
