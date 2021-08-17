@@ -42,10 +42,10 @@ tr td{
 
 .star-btn {
   text-align: center;
+  width: 10%;
 }
 
-.ok-btn {
-  color:black;
-  width: 10%;
-  height: 10%;
+.exclamation-btn, .check-btn {
+  color: black;
+  font-size: 120%;
 }
