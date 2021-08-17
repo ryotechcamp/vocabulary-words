@@ -27,9 +27,13 @@
       <td>#</td>
     <% if current_user.tested_by?(keyword.id) %>
     <div class="check-btn">
-      <td>◯</td>
+      <td>
+        <%= link_to 'いいね', keyword_test_path(keyword.id), method: :delete %>
+      </td>
     <% else %>
-      <td>×</td>
+      <td>
+        <%= link_to '良くない', keyword_tests_path(keyword.id), method: :post %>
+      </td>
     <% end %>
     </tr>
     <% end %>
