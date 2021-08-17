@@ -26,4 +26,8 @@ class User < ApplicationRecord
   has_many :keywords
   has_many :tests
 
+  def tested_by?(keyword_id)
+    tests.where(keyword_id: keyword_id).exists?
+  end
+
 end

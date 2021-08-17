@@ -17,18 +17,20 @@
     </tr>
     <% @keywords.each do |keyword| %>
     <tr>
-    <td class="form-word"><%= keyword.word %></td>
-    <td class="form-genre"><%= keyword.genre.name %></td>
-    <td class="form-instruction">
-      <div class="highlight">
+      <td class="form-word"><%= keyword.word %></td>
+      <td class="form-genre"><%= keyword.genre.name %></td>
+      <td class="form-instruction">
+        <div class="highlight">
           <%= markdown(keyword.instruction) %>
-      </div>  
-    </td>
-    <td>#</td>
-    <td class="star-btn">
-      <i class="fas fa-exclamation-circle exclamation-btn" id="exclamation"></i>
-      <i class="fas fa-check-circle check-btn" id="check"></i>
-    </td>
+        </div>  
+      </td>
+      <td>#</td>
+    <% if current_user.tested_by?(keyword.id) %>
+    <div class="check-btn">
+      <td>◯</td>
+    <% else %>
+      <td>×</td>
+    <% end %>
     </tr>
     <% end %>
     </table>  
