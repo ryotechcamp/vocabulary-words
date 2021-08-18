@@ -1,5 +1,6 @@
 .mypage {
   width: 100%;
+  min-height: 100vh;
   height: 100%;
   background-image: image-url('book.png');
   background-size: cover;
@@ -25,6 +26,7 @@ th {
   background-color: aqua;
   text-align: center;
   border: 1px solid black;
+  font-weight: bold;
 }
 
 tr td{
@@ -33,8 +35,48 @@ tr td{
 
 .form-word, .form-genre {
   text-align: center;
+  padding: 0 10px;
+}
+
+.form-instruction-sentence {
+  width: 60%;
 }
 
 .form-instruction {
-  padding-left: 40px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.instruction-sentence {
+  margin-left: 30px;
+  padding: 10px 0;
+}
+
+.fa-eye {
+  color: blue;
+}
+
+.good-btn, .bad-btn {
+  text-align: center;
+}
+
+.fa-check-circle {
+  color: green;
+}
+
+.fa-times-circle {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.dummy-image {
+  text-align: center;
+}
+
+.fa-laptop {
+  color: aqua;
 }

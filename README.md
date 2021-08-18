@@ -21,6 +21,7 @@
 - has_many :room_users
 - has_many :rooms, through: :room_users
 - has_many :messages
+- has_many :tests
 
 ## keywords テーブル
 
@@ -33,7 +34,21 @@
 
 ### Association
 
-- belongs_to user
+- belongs_to :user
+- has_many   :tests
+
+## tests テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| user    | references | null: false, foreign_key: true |
+| keyword | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :keyword
+
 
 ## rooms テーブル
 

@@ -7,7 +7,7 @@
       <%= "#{@nickname}さんの単語リスト" %>
     </div>
     
-    <table>
+  <table>
     <tr>
     <th>キーワード</th>
     <th>ジャンル</th>
@@ -15,20 +15,50 @@
     <th>音声</th>
     <th>達成度</th>
     </tr>
-    <% @keywords.each do |keyword| %>
+  <% @keywords.each do |keyword| %>
     <tr>
-    <td class="form-word"><%= keyword.word %></td>
-    <td class="form-genre"><%= keyword.genre.name %></td>
-    <td class="form-instruction">
-      <div class="highlight">
-          <%= markdown(keyword.instruction) %>
-      </div>  
-    </td>
-    <td>#</td>
-    <td>#</td>
-    </tr>
+      <td class="form-word"><%= keyword.word %></td>
+      <td class="form-genre"><%= keyword.genre.name %></td>
+      <td class="form-instruction-sentence">
+        <div class="form-instruction">
+          <p id="eye-btn"><i class="far fa-eye fa-2x"></i></p>
+          <div class="instruction-sentence hidden" id="instruction" >
+            <%= markdown(keyword.instruction) %>
+          </div>
+        </div>
+      </td>
+      <td>#</td>
+    <% if keyword.user_id == current_user.id %>
+      <% if current_user.tested_by?(keyword.id) %>
+      <div class="check-btn">
+        <td>
+          <%= link_to keyword_test_path(keyword.id), method: :delete do %>
+            <div class="good-btn">
+              <i class="fas fa-check-circle fa-2x"></i>
+            </div>
+          <% end %>
+        </td>
+      <% else %>
+        <td>
+        <%= link_to keyword_tests_path(keyword.id), method: :post do %>
+          <div class="bad-btn">
+            <i class="fas fa-times-circle fa-2x"></i>
+          </div>
+        <% end %>
+        </td>
+      <% end %>
+
+    <%# 自分以外のユーザーが閲覧した場合ダミーを見せる %>
+    <% else %> 
+      <td>
+        <div class="dummy-image">
+          <i class="fas fa-laptop"></i>
+        </div>
+      </td>
     <% end %>
-    </table>  
+    </tr>
+  <% end %>
+  </table>  
     
   </div>
 </div>
