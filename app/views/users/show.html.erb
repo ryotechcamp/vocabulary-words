@@ -18,13 +18,15 @@
   <% @keywords.each do |keyword| %>
     <tr>
       <td class="form-word">
+      <% if keyword.user_id == current_user.id %>
         <p class="page-btn" id="page"><i class="fas fa-caret-down"></i></p>
         <div class="operate-list" id="operate">
           <ul class=edit-destroy>
-            <li class="edit-page">編集</li>
+            <li class="edit-page"><%= link_to "編集", edit_keyword_path(keyword.id), class:"go-to-edit" %></li>
             <li class="destroy-page">削除</li>
           </ul>
         </div>
+      <% end %>
         <div class="keyword-title">
           <%= keyword.word %>
         </div>
