@@ -6,10 +6,10 @@ function clickButton(){
   for(let i = 0; i < clickChangeButton.length; i++)
   for(let i = 0; i < clickChangeSentence.length; i++){
     clickChangeButton[i].addEventListener('click', () => {
-        if (clickChangeSentence[i].getAttribute("style") == "display:block") {
-          clickChangeSentence[i].removeAttribute("style", "display:block")
+        if (clickChangeSentence[i].getAttribute("style") == "display:block;") {
+          clickChangeSentence[i].removeAttribute("style", "display:block;")
         } else {
-          clickChangeSentence[i].setAttribute("style", "display:block")
+          clickChangeSentence[i].setAttribute("style", "display:block;")
         }
     })
   }
