@@ -23,7 +23,7 @@
         <div class="operate-list" id="operate">
           <ul class=edit-destroy>
             <li class="edit-page"><%= link_to "編集", edit_keyword_path(keyword.id), class:"go-to-edit" %></li>
-            <li class="destroy-page">削除</li>
+            <li class="destroy-page"><%= link_to "削除", keyword_path(keyword.id),method: :delete, class:"go-to-destroy" %></li>
           </ul>
         </div>
       <% end %>
