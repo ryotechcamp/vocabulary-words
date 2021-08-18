@@ -33,6 +33,9 @@ class KeywordsController < ApplicationController
   end
 
   def destroy
+    keyword = Keyword.find(params[:id])
+    keyword.destroy
+    redirect_to user_path(current_user.id)
   end
 
   private
