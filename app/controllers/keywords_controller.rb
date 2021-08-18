@@ -32,6 +32,12 @@ class KeywordsController < ApplicationController
     end
   end
 
+  def destroy
+    keyword = Keyword.find(params[:id])
+    keyword.destroy
+    redirect_to user_path(current_user.id)
+  end
+
   private
   def keyword_params
     params.require(:keyword).permit(:word, :genre_id, :instruction).merge(user_id: current_user.id)
