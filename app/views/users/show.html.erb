@@ -40,7 +40,7 @@
           </div>
         </div>
       </td>
-      <td>#</td>
+      <td><%= audio_tag t.audio_url, :controls => true if t.audio? %></td>
     <% if keyword.user_id == current_user.id %>
       <% if current_user.tested_by?(keyword.id) %>
       <div class="check-btn">
