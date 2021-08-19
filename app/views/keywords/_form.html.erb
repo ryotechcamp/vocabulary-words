@@ -14,14 +14,24 @@
     </div>
 
     <%# ジャンル %>
-    <div class="genre-upload">
-      <div class="form-title">
-        ジャンル
+      <div class="genre-upload">
+        <div class="form-title">
+          ジャンル
+        </div>
+        <div class="genre-form">
+          <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"keyword-genre"}) %>
+        </div>
       </div>
-      <div class="genre-form">
-        <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"keyword-genre"}) %>
+
+      <%# 音声 %>
+      <div class="audio-upload">
+        <div class="form-title">
+          音声ファイル
+        </div>
+        <div class="audio-form">
+          <%= f.file_field :audio %>
+        </div>
       </div>
-    </div>
 
     <%# 説明文 %>
     <div class="instruction-upload">
