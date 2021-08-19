@@ -19,8 +19,8 @@
     <tr>
       <td class="form-word">
       <% if keyword.user_id == current_user.id %>
-        <p class="page-btn" id="page"><i class="fas fa-caret-down"></i></p>
-        <div class="operate-list" id="operate">
+        <div class="edit-destroy-list">
+          <p><i class="fas fa-caret-down"></i></p> 
           <ul class=edit-destroy>
             <li class="edit-page"><%= link_to "編集", edit_keyword_path(keyword.id), class:"go-to-edit" %></li>
             <li class="destroy-page"><%= link_to "削除", keyword_path(keyword.id),method: :delete, class:"go-to-destroy" %></li>
