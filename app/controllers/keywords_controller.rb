@@ -40,7 +40,7 @@ class KeywordsController < ApplicationController
 
   private
   def keyword_params
-    params.require(:keyword).permit(:word, :genre_id, :instruction).merge(user_id: current_user.id)
+    params.require(:keyword).permit(:word, :genre_id, :instruction, :audio).merge(user_id: current_user.id)
   end
 
   def set_keyword
