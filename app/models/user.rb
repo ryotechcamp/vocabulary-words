@@ -25,6 +25,8 @@ class User < ApplicationRecord
 
   has_many :keywords
   has_many :tests, dependent: :destroy
+  has_many :rooms, through: :room_users
+  has_many :room_users
 
   def tested_by?(keyword_id)
     tests.where(keyword_id: keyword_id).exists?
