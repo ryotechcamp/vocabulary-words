@@ -13,7 +13,7 @@
     <th>ジャンル</th>
     <th>説明文</th>
     <th>音声</th>
-    <th>達成度</th>
+    <th>正誤</th>
     </tr>
   <% @keywords.each do |keyword| %>
     <tr>
@@ -40,7 +40,13 @@
           </div>
         </div>
       </td>
-      <td>#</td>
+      
+      <%# 音声 %>
+      <td>
+        <% if keyword.audio.present? && keyword.user_id == current_user.id %> 
+          <%= audio_tag keyword.audio_url, :controls => true  %>
+        <% end %>  
+      </td>
     <% if keyword.user_id == current_user.id %>
       <% if current_user.tested_by?(keyword.id) %>
       <div class="check-btn">

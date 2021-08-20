@@ -19,6 +19,33 @@
 
 .user-nickname, .logout, .login, .sign-up, .fill-in {
   text-decoration: none;
-  color: black;
   margin-right: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  opacity: 0.7;
+}
+
+.login:hover, .sign-up:hover, .fill-in:hover, .logout:hover, .user-nickname:hover {
+  opacity: 1;
+}
+
+.login {
+  background-color: green;
+}
+
+.sign-up {
+  background-color: tomato;
+}
+
+.user-nickname {
+  background-color: teal;
+}
+
+.logout {
+  background-color: blue;
+}
+
+.fill-in {
+  background-color: coral;
 }
