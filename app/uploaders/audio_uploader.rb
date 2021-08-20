@@ -12,6 +12,7 @@ class AudioUploader < CarrierWave::Uploader::Base
   else
     storage :file
   end
+  
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
