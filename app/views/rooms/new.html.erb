@@ -9,9 +9,8 @@
         ルーム名
       </div>
       <div class="room-form">
-        <%= form_with model: @keyword, local: true do |f| %>
+        <%= form_with model: @room, local: true do |f| %>
         <%= f.text_area :name, id:"keyword-word", class: "room-form-area" %>
-        <% end %>
       </div>
     </div>
 
@@ -21,11 +20,21 @@
         参加者
       </div>
       <div class="member-select">
-        <select class="member-list">
+        <select value="">
           <option>メンバーを選択してください</option>
-          <option>ユーザー１</option>
-          <option>ユーザー２</option>
+          <% User.where.not(id: current_user.id).each do |user| %>
+          <option><%= user.nickname %></option>
+          <% end %>
         </select>
+      </div>
+    </div>
+
+    <%# 送信ボタン %>
+    <div class="submit-btn-contents">
+      <%= f.submit "保存する" ,class:"submit-btn" %>
+      <div class="back">
+        <%= link_to 'トップページに戻る', root_path, class: "back-btn" %>
+        <% end %>
       </div>
     </div>
   </div>
