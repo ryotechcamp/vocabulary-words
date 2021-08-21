@@ -1,0 +1,32 @@
+<div class="new-contents">
+  <div class="contens-form">
+    <h2 class="keyword-contents-title">新規ルーム作成</h2>
+    <h1 class="form-detail">全ての項目が必須です</h1>
+
+    <%# ルーム名 %>
+    <div class="room-upload">
+      <div class="form-title">
+        ルーム名
+      </div>
+      <div class="room-form">
+        <%= form_with model: @keyword, local: true do |f| %>
+        <%= f.text_area :name, id:"keyword-word", class: "room-form-area" %>
+        <% end %>
+      </div>
+    </div>
+
+    <%# 参加者 %>
+    <div class="member-upload">
+      <div class="form-title">
+        参加者
+      </div>
+      <div class="member-select">
+        <select class="member-list">
+          <option>メンバーを選択してください</option>
+          <option>ユーザー１</option>
+          <option>ユーザー２</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
