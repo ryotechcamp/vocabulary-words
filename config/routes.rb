@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   end
   resources :users, only: :show
 
-  resources :rooms, only: [:new, :create]
+  resources :rooms, only: [:new, :create, :show]
 end
