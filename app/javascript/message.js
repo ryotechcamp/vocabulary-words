@@ -1,5 +1,8 @@
 function message (){
-  console.log("イベント発火");
+  const submit = document.getElementById("submit");
+  submit.addEventListener("click", () => {
+    
+  });
 };
 
 window.addEventListener('load', message);
