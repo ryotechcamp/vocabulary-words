@@ -6,6 +6,7 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .room-contents {
@@ -22,3 +23,28 @@
   font-size: 25px;
   text-align: center;
 }
+
+.room-bottom-contents {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.room-form {
+  margin: 0 40px;
+  padding: 20px 0;
+}
+
+.room-content-form {
+  width: 30vw;
+  height: 70px;
+  padding: 5px;
+}
+
+.room-btn {
+  width: 10vw;
+  height: 50px;
+  margin: auto 0;
+}
+ 
