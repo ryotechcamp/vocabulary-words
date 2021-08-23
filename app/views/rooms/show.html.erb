@@ -5,8 +5,24 @@
     <div class="room-title">
       <%= "#{@room.name}の学習レポート" %>
     </div>
+    <%# 投稿一覧 %>
     <div class="room-main-contents">
+      <div id="list">
+      </div>
+
+      <%= @messages.each do |message| %>
+        <div class="message">
+          <div class="message-date">
+            投稿日時：<% message.created_at %>
+          </div>
+          <div class="message-content">
+            <%= message.content %>
+          </div>
+        </div>
+      <% end %>
+
     </div>
+    <%# 送信ボタン %>
     <div class="room-bottom-contents">
       <div class="room-form">
         <%= form_with url:  "#", method: :post, id: "form" do |form| %>
