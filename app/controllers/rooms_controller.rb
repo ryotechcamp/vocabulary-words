@@ -15,6 +15,7 @@ class RoomsController < ApplicationController
 
   def show
     @room = Room.find(params[:id])
+    @message = Message.new
     @messages = Message.order(id: "DESC")
   end
 

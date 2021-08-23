@@ -25,7 +25,7 @@
     <%# 送信ボタン %>
     <div class="room-bottom-contents">
       <div class="room-form">
-        <%= form_with url:  "#", method: :post, id: "form" do |form| %>
+        <%= form_with model: @message, method: :post, id: "form" do |form| %>
         <%= form.text_area :content, class:"room-content-form" %>
       </div>
       <%= form.submit '送信する' , id: "submit" ,class:"room-btn" %>
