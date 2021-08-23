@@ -14,22 +14,6 @@
       </div>
     </div>
 
-    <%# 参加者 %>
-    <div class="member-upload">
-      <div class="form-title">
-        参加者
-      </div>
-      <div class="member-select">
-        <select name="room[user_ids][]">
-          <option value="">メンバーを選択してください</option>
-          <% User.where.not(id: current_user.id).each do |user| %>
-          <option value=<%= user.id %>><%= user.nickname %></option>
-          <% end %>
-        </select>
-        <input name="room[user_ids][]" type="hidden" value=<%= current_user.id %>>
-      </div>
-    </div>
-
     <%# 送信ボタン %>
     <div class="submit-btn-contents">
       <%= f.submit "保存する" ,class:"submit-btn" %>

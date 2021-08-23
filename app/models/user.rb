@@ -7,6 +7,10 @@ class User < ApplicationRecord
   validates_format_of :password, with: PASSWORD_REGEX, message: 'is invalid. Include both letters and numbers'
 
   has_one_attached :photo
+  has_many :keywords
+  has_many :tests, dependent: :destroy
+  has_many :rooms
+
 
   with_options presence: true do
   validates :nickname
@@ -22,11 +26,6 @@ class User < ApplicationRecord
       validates :kana_first_name
       validates :kana_last_name
   end
-
-  has_many :keywords
-  has_many :tests, dependent: :destroy
-  has_many :rooms, through: :room_users
-  has_many :room_users
 
   def tested_by?(keyword_id)
     tests.where(keyword_id: keyword_id).exists?

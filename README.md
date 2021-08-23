@@ -18,8 +18,7 @@
 ### Association
 
 - has_many :keywords
-- has_many :room_users
-- has_many :rooms, through: :room_users
+- has_many :rooms
 - has_many :messages
 - has_many :tests
 
@@ -58,16 +57,8 @@
 
 ### Association
 
-- has_many :room_users
-- has_many :users, through: :room_users
+- belongs  :users
 - has_many :messages
-
-## room_users テーブル
-
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| room   | references | null: false, foreign_key: true |
 
 ### Association
 
