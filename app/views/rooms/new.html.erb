@@ -1,0 +1,26 @@
+<div class="new-contents">
+  <div class="contens-form">
+    <h2 class="keyword-contents-title">新規ルーム作成</h2>
+    <h1 class="form-detail">全ての項目が必須です</h1>
+
+    <%# ルーム名 %>
+    <div class="room-upload">
+      <div class="form-title">
+        ルーム名
+      </div>
+      <div class="room-form">
+        <%= form_with model: @room, local: true do |f| %>
+        <%= f.text_area :name, id:"keyword-word", class: "room-form-area" %>
+      </div>
+    </div>
+
+    <%# 送信ボタン %>
+    <div class="submit-btn-contents">
+      <%= f.submit "保存する" ,class:"submit-btn" %>
+      <div class="back">
+        <%= link_to 'トップページに戻る', root_path, class: "back-btn" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

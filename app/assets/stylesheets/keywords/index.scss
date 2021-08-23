@@ -95,6 +95,8 @@ span {
   margin-left: 40px;
 }
 
+// ユーザー情報表示
+
 .user-lists{
   padding: 0 60px 20px 60px;
 }
@@ -119,3 +121,35 @@ span {
   text-decoration: none;
 }
 
+// ルームアイコン
+.room-lists {
+  padding: 0 60px 20px 60px;
+}
+
+.room-list {
+  display: inline-block;
+  margin: 60px 40px;
+  position: relative;
+}
+
+.room-icon {
+  font-size: 15.0em;
+  color: black;
+}
+
+.room-name {
+  position: absolute;
+  top: 27%;
+  left: 27%;
+  font-weight: bold;
+  color: brown;
+}
+
+.room-name-list {
+  text-decoration: none;
+  color: brown;
+}
+
+.room-name-list:hover {
+  opacity: 0.5;
+}

@@ -1,4 +1,4 @@
-.keyword-new-contents {
+.new-contents {
   width: 100%;
   min-height: 100vh;
   height: 100%;
@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.keyword-contens-form {
+.contens-form {
   width: 50%;
   height: 100%;
   margin: auto;
@@ -35,13 +35,13 @@
   font-size: 20px;
 }
 
-.word-upload, .genre-upload, .instruction-upload, .submit-btn-contents, .audio-upload{
+.word-upload, .genre-upload, .instruction-upload, .submit-btn-contents, .audio-upload, .room-upload, .member-upload{
   text-align: center;
   margin: 30px 0;
 }
 
-// キーワード
-.word-form-area {
+// キーワード、ルーム名
+.word-form-area, .room-form-area{
   width: 60%;
   height: 10%;
   padding: 0 5px;
@@ -66,4 +66,3 @@
 .back {
   margin-top: 10px;
 }
-

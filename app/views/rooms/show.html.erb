@@ -1,0 +1,19 @@
+<%= render "shared/header" %>
+
+<div class="room">
+  <div class="room-contents">
+    <div class="room-title">
+      <%= "#{@room.name}の学習レポート" %>
+    </div>
+    <div class="room-main-contents">
+    </div>
+    <div class="room-bottom-contents">
+      <div class="room-form">
+        <%= form_with url:  "#", method: :post, id: "form" do |form| %>
+        <%= form.text_area :content, class:"room-content-form" %>
+      </div>
+      <%= form.submit '送信する' , id: "submit" ,class:"room-btn" %>
+      <% end %>
+    </div>
+  </div>
+</div>

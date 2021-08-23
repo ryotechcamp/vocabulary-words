@@ -4,7 +4,7 @@
 <div class ='main'> 
   <%# 画面上部「これから輝くエンジニアの卵たちへ」帯部分 %>
   <div class ='top-contents'>
-    <h2 class = 'service-title'>Welcome to VocaTech</h2>
+    <h2 class = 'service-title'>Welcome t o VocaTech</h2>
     <div class ='service-text'>
       <p class = 'service-explain'>プログラミング学習に特化した<span>単語帳アプリ</span></p>
       <p class = 'service-explain'>エラーを共有できる<span>チャットルーム</span></p>
@@ -30,14 +30,13 @@
     </div>
     <div class = 'rooms-contents'>
       <div class = 'rooms-text'>
-        <h3 class = 'rooms-title'>エラーを共有できるチャットルーム機能搭載！</h3>
+        <h3 class = 'rooms-title'>日々の学習を記録できるレポート機能搭載！</h3>
         <p class = 'rooms-details'>プログラミンを学習していると必ずエラーに直面します</p>
         <p class = 'rooms-details'>大変だった経験したエラーを記録として残しておきたい！</p>
-        <p class = 'rooms-details'>同じ目標を持つ仲間とエラーを窮した！</p>
-        <p class = 'rooms-details'>そんなあなたに画像、コメントが投稿できるチャットルームをお届けします</p>
+        <p class = 'rooms-details'>そんなあなたに画像、コメントが投稿できるレポートページをお届けします</p>
         <% if user_signed_in? %>
         <div class = 'btn'>
-          <%= link_to "ルームを作成する", '#', class: "room-enter-btn" %>
+          <%= link_to "ルームを作成する", new_room_path, class: "room-enter-btn" %>
         </div>
         <% end %>
       </div>
@@ -55,8 +54,16 @@
       </div>
     <% end %>
   </div>
-  <div class="room-list">
-    <h2 class = 'contents-title'>ROOM</h2>
+  <div class="room-lists">
+    <h2 class = 'contents-title'>REPORT</h2>
+    <% @rooms.each do |room| %>
+      <div class="room-list">
+        <i class="fas fa-newspaper room-icon"></i>
+        <div class="room-name">
+          <%= link_to room.name, room_path(room.id), class:"room-name-list" %>
+        </div>
+      </div>
+    <%end%>
   </div>
 </div>
 <%# footer %>
