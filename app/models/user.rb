@@ -10,6 +10,7 @@ class User < ApplicationRecord
   has_many :keywords
   has_many :tests, dependent: :destroy
   has_many :rooms
+  has_many :messages
 
 
   with_options presence: true do
