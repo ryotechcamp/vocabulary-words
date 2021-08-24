@@ -10,9 +10,6 @@
     <% @messages.each do |message| %>
     <div class="room-main-contents">
       <div class="message">
-        <div class="message-date">
-          <%= message.created_at %>
-        </div>
         <div class="message-content">
           <%= message.content %>
         </div>
@@ -28,11 +25,15 @@
           <%= form.text_area :content, class:"room-content-form" %>
         </div>
         <label class="form-image">
-          <span class="image-file">画像</span>
+          <span class="image-file"><i class="fas fa-camera"></i></span>
           <%= form.file_field :image, class: 'hidden' %>
         </label>
-        <%= form.submit '送信する' , id: "submit" ,class:"room-btn" %>
+        <%= button_tag :type => "submit", class: "room-btn" do %>
+          <i class="far fa-paper-plane"></i>
+        <% end %>
       <% end %>
     </div>
   </div>
 </div>
+
+<%= render "shared/footer" %>

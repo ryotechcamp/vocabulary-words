@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  padding: 10px 100px;
+  height: 20vh;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list-content a{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+}
