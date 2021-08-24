@@ -1,5 +1,6 @@
 class RoomsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_room, only: [:new, :create, :show]
   before_action :move_to_index
 
   def new
@@ -16,10 +17,9 @@ class RoomsController < ApplicationController
   end
 
   def show
-    @room = Room.find(params[:id])
     @message = Message.new
-    user = User.find(current_user.id)
-    @messages = user.messages.includes(:user)
+    room = Room.find(@room.id)
+    @messages = room.messages
   end
 
   private
@@ -28,8 +28,12 @@ class RoomsController < ApplicationController
     params.require(:room).permit(:name).merge(user_id: current_user.id)
   end
 
+  def set_room
+    @room = Room.find(params[:id])
+  end
+
   def move_to_index
-    redirect_to root_path unless @user_id == current_user.id
+    redirect_to root_path unless @room.user_id == current_user.id
   end
 
 end
