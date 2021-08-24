@@ -5,15 +5,37 @@
     <div class="room-title">
       <%= "#{@room.name}の学習レポート" %>
     </div>
+
+    <%# 投稿一覧 %>
+    <% @messages.each do |message| %>
     <div class="room-main-contents">
+      
+        <div class="message">
+          <div class="message-date">
+            <%= message.created_at %>
+          </div>
+          <div class="message-content">
+            <%= message.content %>
+          </div>
+          <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+        </div>
+      
     </div>
-    <div class="room-bottom-contents">
-      <div class="room-form">
-        <%= form_with url:  "#", method: :post, id: "form" do |form| %>
-        <%= form.text_area :content, class:"room-content-form" %>
-      </div>
-      <%= form.submit '送信する' , id: "submit" ,class:"room-btn" %>
-      <% end %>
+    <% end %>
+
+    <%# 送信ボタン %>
+      <%= form_with model:@message, url: room_messages_path(@room.id), method: :post, id: "form", local: true do |form| %>
+        <div class="room-form">
+          <%= form.text_area :content, class:"room-content-form" %>
+          </div>
+          <label class="form-image">
+            <span class="image-file">画像</span>
+            <%= form.file_field :image, class: 'hidden' %>
+          </label>
+        
+          <%= form.submit '送信する' , id: "submit" ,class:"room-btn" %>
+      
     </div>
+    <% end %>
   </div>
 </div>

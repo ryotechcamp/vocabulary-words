@@ -11,7 +11,6 @@
 
 .room-contents {
   width: 50%;
-  min-height: 100vh;
   height: 100%;
   margin: auto;
   background-color: white;
@@ -32,19 +31,17 @@
 }
 
 .room-form {
-  margin: 0 40px;
-  padding: 20px 0;
+  margin: 0 auto;
 }
 
 .room-content-form {
   width: 30vw;
-  height: 70px;
+  height: 60px;
   padding: 5px;
+  margin: 0 auto;
 }
 
 .room-btn {
   width: 10vw;
-  height: 50px;
-  margin: auto 0;
+  height: 50%;
 }
- 
