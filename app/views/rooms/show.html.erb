@@ -24,7 +24,7 @@
     <% end %>
 
     <%# 送信ボタン %>
-      <%= form_with model:@message, url: room_messages_path(@room.id), method: :post, id: "form", local: true do |form| %>
+      <%= form_with model:[@room, @message], url: room_messages_path(@room.id), method: :post, id: "form", local: true do |form| %>
         <div class="room-form">
           <%= form.text_area :content, class:"room-content-form" %>
           </div>
@@ -32,10 +32,8 @@
             <span class="image-file">画像</span>
             <%= form.file_field :image, class: 'hidden' %>
           </label>
-        
           <%= form.submit '送信する' , id: "submit" ,class:"room-btn" %>
-      
-    </div>
-    <% end %>
+        </div>
+      <% end %>
   </div>
 </div>
