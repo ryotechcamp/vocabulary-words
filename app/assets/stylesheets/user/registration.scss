@@ -160,3 +160,10 @@
 .top-back-btn {
   color: black;
 }
+
+// レスポンシブデザイン
+@media (max-width: 599px) {
+  .form-wrap {
+    width: 80%;
+  }
+}
