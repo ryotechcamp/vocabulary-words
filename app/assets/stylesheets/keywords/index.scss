@@ -197,3 +197,58 @@
   background: linear-gradient(transparent 40%, yellow 40%);
 }
 
+// レスポンシブWEBデザイン
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  // 帯部分
+  .top-contents {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .service-title {
+    font-size: 7vh;
+  }
+  
+  .service-text {
+    font-size: 4vh;
+  }
+  //  単語帳とチャットルーム説明
+  .words-contents, .rooms-contents {
+    margin: 30px 0;
+  }
+
+  .contents-title {
+    font-size: xx-large;
+  }
+
+  .words-title, .room-title {
+    font-size: 15px;
+  }
+
+  .words-details, .rooms-details {
+    font-size: 5px;
+  }
+
+  .words-enter-btn, .room-enter-btn {
+    font-size: 10px;
+  }
+
+  // player一覧
+  .user-list {
+    margin: 0 20px;
+  }
+
+  .user-photo {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+  }
+
+  .user-nickname {
+    font-size: 15px;
+  }
+
+  
+}
+
