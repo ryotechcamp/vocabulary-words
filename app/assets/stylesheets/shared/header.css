@@ -35,7 +35,7 @@ header {
 }
 
 .fa-sign-in-alt {
-  color: blue;
+  color: skyblue;
 }
 
 .fa-sign-out-alt {
@@ -60,13 +60,13 @@ header {
   margin: auto 0;
   border-radius: 5px;
   color: aliceblue;
-  box-shadow: 5px 5px black;
+  box-shadow: 5px 5px white;
 }
 
-.sign-up:active {
+.sign-up:hover {
   position: relative;
   top: 5px;
-  right: 5px;
+  left: 5px;
   box-shadow: none;
 }
 
