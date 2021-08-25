@@ -4,9 +4,18 @@
   </div>
   <div class="list">
     <% if user_signed_in? %>
-       <li><%= link_to current_user.nickname, user_path(current_user.id), class:"user-nickname" %></li>
-       <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "logout" %></li>
-       <li><%= link_to "投稿する", new_keyword_path, class: "fill-in" %></li>
+       <li><%= link_to user_path(current_user.id) do %>
+          <span class="fas fa-user-edit"></span>
+          <% end %>
+       </li>
+       <li><%= link_to destroy_user_session_path, method: :delete do %>
+         <span class="fas fa-sign-out-alt"></span>
+         <% end %>
+       </li>
+       <li><%= link_to new_keyword_path do %>
+         <span class="fas fa-pencil-alt"></span>
+         <% end %>
+       </li>
     <% else %>
       <%# ログイン %>
       <li><%= link_to new_user_session_path do %>

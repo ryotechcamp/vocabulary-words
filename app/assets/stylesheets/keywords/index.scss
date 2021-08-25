@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height:80vh;
+  height:100vh;
   object-fit: cover;
   color:white;
   align-items: center;
@@ -13,20 +13,22 @@
 }
 
 .service-title {
-  font-size: 8vh;
+  font-size: 10vh;
   text-shadow: 5px 5px 5px black;
   position: absolute;
   top: 40%;
+  margin-left: 30px;
 }
 
 .service-text {
   position: absolute;
   top: 60%;
-  font-size: 4vh;
+  font-size: 5vh;
   text-shadow: 5px 5px 5px black;
+  margin-left: 30px;
 }
 
-span {
+.service-explain span {
   color: red;
 }
 
@@ -60,13 +62,38 @@ span {
   margin-top: 20px;
 }
 
-.words-enter-btn {
-  background-color: red;
-  color: white;
+// ボタン
+.words-enter-btn, .room-enter-btn {
+  background-color: yellow;
+  color: black;
   font-size: xx-large;
-  border-radius: 50%;
   padding: 10px 20px;
   text-decoration: none;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+
+.words-enter-btn:hover, .room-enter-btn:hover {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: none;
+}
+
+// 表示ボタン
+.contents-title-enter {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.words-enter-btn-second, .room-enter-btn-second {
+  text-decoration: none;
+  color: black;
+  font-size: 3vh;
+  text-align: center;
+  font-style: italic;
+  font-family: Times New Roman, "ＭＳ Ｐゴシック";
+  border-bottom:1px solid black;
 }
 
 .rooms-contents {
@@ -79,15 +106,6 @@ span {
   font-size: 5vh;
 }
 
-.room-enter-btn {
-  background-color: red;
-  color: white;
-  font-size: xx-large;
-  border-radius: 50%;
-  padding: 10px 20px;
-  text-decoration: none;
-  
-}
 
 .meeting-pict {
   width: 30%;
@@ -111,13 +129,19 @@ span {
   margin: 60px 20px;
 }
 
-.user-nickname {
-  text-align: center;
+.nickname {
+  text-decoration: none;
 }
 
-.user-nickname a {
-  font-size: 5vh;
+.user-nickname {
+  text-align: center;
+  text-decoration: none;
   color: black;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-nickname span {
   text-decoration: none;
 }
 
@@ -139,10 +163,13 @@ span {
 
 .room-name {
   position: absolute;
-  top: 25%;
-  left: 27%;
+  top: 20%;
+  left: 25%;
   font-weight: bold;
   color: brown;
+  font-style: italic;
+  font-family: Times New Roman, "ＭＳ Ｐゴシック";
+  font-size: xx-large;
 }
 
 .room-name-list {
@@ -163,3 +190,10 @@ span {
 .fa-trash-alt:hover {
   opacity: 1;
 }
+
+/* 蛍光ペン装飾 */
+.words-title span, .words-details span, .rooms-title span, .rooms-details span {
+  position: relative;
+  background: linear-gradient(transparent 40%, yellow 40%);
+}
+

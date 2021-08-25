@@ -1,7 +1,13 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+  height: 70px;
+}
 
 .top-page-header {
   width: 100vw;
-  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +16,6 @@
 
 .title-icon {
   height: 70px;
-  margin-bottom: 0px;
 }
 
 .list {
@@ -18,28 +23,33 @@
   list-style: none;
 }
 
-.user-nickname, .logout, .login, .fill-in {
-  
-  margin-right: 30px;
-  border-radius: 80%;
-  color: white;
-  opacity: 0.7;
-}
-
-.login:hover, .sign-up:hover, .fill-in:hover, .logout:hover, .user-nickname:hover {
-  opacity: 1;
-}
-
-.fa-sign-in-alt {
-  color: blue;
+/* ヘッダーアイコン共通 */
+.fa-sign-in-alt, .fa-sign-out-alt, .fa-pencil-alt, .fa-user-edit {
   margin-right: 50px;
   font-size: 50px;
   opacity: 0.7;
 }
 
-.fa-sign-in-alt:hover {
+.fa-sign-in-alt:hover, .fa-sign-out-alt:hover, .fa-pencil-alt:hover, .fa-user-edit:hover {
   opacity: 1;
 }
+
+.fa-sign-in-alt {
+  color: blue;
+}
+
+.fa-sign-out-alt {
+  color: lemonchiffon;
+}
+
+.fa-pencil-alt {
+  color: aqua;
+}
+
+.fa-user-edit {
+  color: palevioletred;
+}
+
 
 .sign-up {
   background-color: tomato;
@@ -60,14 +70,4 @@
   box-shadow: none;
 }
 
-.user-nickname {
-  background-color: teal;
-}
 
-.logout {
-  background-color: blue;
-}
-
-.fill-in {
-  background-color: coral;
-}
