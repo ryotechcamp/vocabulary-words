@@ -39,7 +39,7 @@ header {
 }
 
 .fa-sign-out-alt {
-  color: orange;
+  color: lemonchiffon;
 }
 
 .fa-pencil-alt {
@@ -47,7 +47,7 @@ header {
 }
 
 .fa-user-edit {
-  color: brown;
+  color: palevioletred;
 }
 
 
@@ -70,6 +70,4 @@ header {
   box-shadow: none;
 }
 
-.user-nickname {
-  background-color: teal;
-}
+

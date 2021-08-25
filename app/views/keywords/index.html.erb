@@ -4,7 +4,7 @@
 <div class ='main'> 
   <%# 画面上部「これから輝くエンジニアの卵たちへ」帯部分 %>
   <div class ='top-contents'>
-    <h2 class = 'service-title'>Welcome t o VocaTech</h2>
+    <h2 class = 'service-title'>Welcome to VocaTech</h2>
     <div class ='service-text'>
       <p class = 'service-explain'>プログラミング学習に特化した<span>単語帳アプリ</span></p>
       <p class = 'service-explain'>エラーを共有できる<span>チャットルーム</span></p>
@@ -17,23 +17,23 @@
     <div class = 'words-contents'>
       <%= image_tag "pc.png", class:"pc-pict" %>
       <div class = 'words-text'>
-        <h3 class = 'words-title'>自分の弱点を狙い撃ちできる単語帳機能搭載！</h3>
+        <h3 class = 'words-title'>自分の弱点を狙い撃ちできる<span>単語帳機能搭載！</span></h3>
         <p class = 'words-details'>プログラミングを学習していると</p>
         <p class = 'words-details'>新しい言葉がどんどん出て頭の中がパンクした経験はありませんか？</p>
-        <p class = 'words-details'>そんなあなたに自分の弱点だけをまとめた単語帳であなたの勉強をサポートします</p>
+        <p class = 'words-details'>そんなあなたに<span>自分の弱点だけをまとめた単語帳</span>であなたの勉強をサポートします</p>
         <% if user_signed_in? %>
         <div class = 'btn'>
-          <%= link_to "入力する", new_keyword_path, class: "words-enter-btn" %>
+          <%= link_to "単語を入力する", new_keyword_path, class: "words-enter-btn" %>
         </div>
         <% end %>
       </div>
     </div>
     <div class = 'rooms-contents'>
       <div class = 'rooms-text'>
-        <h3 class = 'rooms-title'>日々の学習を記録できるレポート機能搭載！</h3>
+        <h3 class = 'rooms-title'>日々の学習を記録できる<span>レポート機能搭載！</span></h3>
         <p class = 'rooms-details'>プログラミンを学習していると必ずエラーに直面します</p>
         <p class = 'rooms-details'>大変だった経験したエラーを記録として残しておきたい！</p>
-        <p class = 'rooms-details'>そんなあなたに画像、コメントが投稿できるレポートページをお届けします</p>
+        <p class = 'rooms-details'>そんなあなたに<span>画像、コメントが投稿</span>できるレポートページをお届けします</p>
         <% if user_signed_in? %>
         <div class = 'btn'>
           <%= link_to "ルームを作成する", new_room_path, class: "room-enter-btn" %>
@@ -43,14 +43,21 @@
       <%= image_tag "meeting.png", class:"meeting-pict" %>
     </div>
   </div>
+
+  <%# PLAYER一覧 %>
   <div class="user-lists">
     <h2 class = 'contents-title'>PLAYER</h2>
+    <div class="contents-title-enter">
+      <%= link_to "こちらから単語を入力する", new_keyword_path, class: "words-enter-btn-second" %>
+    </div>
     <% @users.each do |user| %>
       <div class = 'user-list'>
-        <%= image_tag user.photo.variant(resize: '200x300'), class: 'user-photo' %>
-        <div class = "user-nickname">
-        <%= link_to user.nickname, user_path(user.id), class: 'nickname' %>
-        </div>
+        <%= link_to user_path(user.id), class: 'nickname' do %>
+          <%= image_tag user.photo.variant(resize: '200x300'), class: 'user-photo' %>
+          <div class = "user-nickname">
+            <%= user.nickname %>
+          </div>
+        <% end %>
       </div>
     <% end %>
   </div>
@@ -59,12 +66,17 @@
   <% if user_signed_in? %>
   <div class="room-lists">
     <h2 class = 'contents-title'>REPORT</h2>
+    <div class="contents-title-enter">
+      <%= link_to "こちらからレポートを作成する", new_room_path, class: "room-enter-btn-second" %>
+    </div>
     <% @rooms.each do |room| %>
       <div class="room-list">
-        <i class="fas fa-newspaper room-icon"></i>
-        <div class="room-name">
-          <%= link_to room.name, room_path(room.id), class:"room-name-list" %>
-        </div>
+        <%= link_to room_path(room.id), class:"room-name-list" do %>
+          <i class="fas fa-newspaper room-icon"></i>
+          <div class="room-name">
+            <%= room.name %>
+          </div>
+        <% end %>
         <div class="trush-icon">
           <%= link_to room_path(room.id), method: :delete do %>
             <i class="fas fa-trash-alt"></i>
