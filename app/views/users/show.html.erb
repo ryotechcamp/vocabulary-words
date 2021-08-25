@@ -22,8 +22,14 @@
         <div class="edit-destroy-list">
           <p><i class="fas fa-caret-down"></i></p> 
           <ul class=edit-destroy>
-            <li class="edit-page"><%= link_to "編集", edit_keyword_path(keyword.id), class:"go-to-edit" %></li>
-            <li class="destroy-page"><%= link_to "削除", keyword_path(keyword.id),method: :delete, class:"go-to-destroy" %></li>
+            <li class="edit-page"><%= link_to  edit_keyword_path(keyword.id), class:"go-to-edit" do %>
+            <span class="fas fa-edit"></span>
+            <% end %>
+            </li>
+            <li class="destroy-page"><%= link_to keyword_path(keyword.id),method: :delete, class:"go-to-destroy" do %>
+            <span class="fas fa-trash-alt"></span>
+            <% end %>
+            </li>
           </ul>
         </div>
       <% end %>
@@ -78,6 +84,7 @@
     </tr>
   <% end %>
   </table>  
-    
   </div>
 </div>
+
+<%= render "shared/footer" %>

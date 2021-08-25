@@ -3,8 +3,9 @@
   width: 100vw;
   height: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 100px;
 }
 
 .title-icon {
@@ -17,11 +18,10 @@
   list-style: none;
 }
 
-.user-nickname, .logout, .login, .sign-up, .fill-in {
-  text-decoration: none;
+.user-nickname, .logout, .login, .fill-in {
+  
   margin-right: 30px;
-  padding: 10px;
-  border-radius: 50%;
+  border-radius: 80%;
   color: white;
   opacity: 0.7;
 }
@@ -30,12 +30,34 @@
   opacity: 1;
 }
 
-.login {
-  background-color: green;
+.fa-sign-in-alt {
+  color: blue;
+  margin-right: 50px;
+  font-size: 50px;
+  opacity: 0.7;
+}
+
+.fa-sign-in-alt:hover {
+  opacity: 1;
 }
 
 .sign-up {
   background-color: tomato;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  font-size: 30px;
+  margin: auto 0;
+  border-radius: 5px;
+  color: aliceblue;
+  box-shadow: 5px 5px black;
+}
+
+.sign-up:active {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  box-shadow: none;
 }
 
 .user-nickname {
