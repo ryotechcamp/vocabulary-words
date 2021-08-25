@@ -70,4 +70,30 @@ header {
   box-shadow: none;
 }
 
+@media (max-width: 599px) {
+  header {
+    height: 30px;
+  }
+
+  .top-page-header {
+    padding: 0 50px;
+  }
+
+  .title-icon {
+    height: 30px;
+  }
+
+  .fa-sign-in-alt, .fa-user-edit, .fa-sign-out-alt, .fa-pencil-alt{
+    font-size: 15px;
+  }
+
+  .sign-up {
+    font-size: 5px;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+}
+
+
 

@@ -63,12 +63,13 @@
 }
 
 .room-btn {
-  padding: 5px;
+  padding: 10px;
   box-shadow: 5px 5px black;
   background-color: skyblue;
+  border-radius: 100%;
 }
 
-.room-btn:active {
+.room-btn:hover {
   position: relative;
   top: 5px;
   left: 5px;
@@ -82,4 +83,20 @@
 
 .fa-paper-plane {
   font-size: 30px;
+}
+
+// レスポンシブデザイン
+@media (max-width: 599px) {
+  .room-contents {
+    width: 80%;
+  }
+
+  .message-image {
+    width: 50%;
+    height: 40%;
+  }
+
+  .room-content-form {
+    width: 80%;
+  }
 }

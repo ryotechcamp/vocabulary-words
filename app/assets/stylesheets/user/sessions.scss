@@ -58,3 +58,9 @@
   margin-bottom: 20px;
 }
 
+// レスポンシブデザイン
+@media (max-width: 599px) {
+  .session-form {
+    width: 80%;
+  }
+}
