@@ -65,6 +65,11 @@
         <div class="room-name">
           <%= link_to room.name, room_path(room.id), class:"room-name-list" %>
         </div>
+        <div class="trush-icon">
+          <%= link_to room_path(room.id), method: :delete do %>
+            <i class="fas fa-trash-alt"></i>
+          <% end %>
+        </div>
       </div>
     <%end%>
   </div>

@@ -21,6 +21,12 @@ class RoomsController < ApplicationController
     redirect_to root_path unless @room.user_id == current_user.id
   end
 
+  def destroy
+    room = Room.find(params[:id])
+    room.destroy
+    redirect_to root_path
+  end
+
   private
 
   def room_params
