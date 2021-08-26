@@ -67,3 +67,4 @@ gem 'pry-rails'
 gem 'carrierwave'
 gem 'cloudinary'
 gem 'dotenv-rails'
+gem "aws-sdk-s3", require: false
