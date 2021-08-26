@@ -44,9 +44,6 @@ tr td{
   font-weight: bold;
 }
 
-.edit-destroy-list {
-}
-
 .edit-destroy-list:hover .edit-destroy{
   display: block;
 }
@@ -82,6 +79,10 @@ tr td{
 .destroy-page:hover {
   font-weight: bold;
   opacity: 1;
+}
+
+.fa-trash-alt {
+  font-size: 20px;
 }
 
 .form-genre {
@@ -128,10 +129,6 @@ tr td{
 
 .fa-times-circle {
   color: red;
-}
-
-.hidden {
-  //display: none;
 }
 
 .dummy-image {
