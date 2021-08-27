@@ -110,7 +110,6 @@ Voca Tech
 ### 定着度確認機能
 
 [![Image from Gyazo](https://i.gyazo.com/8b90275402ee185ece8139ecf2b33dfc.gif)](https://gyazo.com/8b90275402ee185ece8139ecf2b33dfc)
-
 自分の定着度合いに対し、◯×を切り替えられます。
 
 ## レポートルーム機能
