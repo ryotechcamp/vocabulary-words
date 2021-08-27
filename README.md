@@ -56,7 +56,7 @@ Voca Tech
 
 トップページ右上から新規登録ができます。
 
-[![Image from Gyazo](https://i.gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e.gif)](https://gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e)
+[![Image from Gyazo](https://i.gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e.gif)](https://gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e.gif)
 
 必要事項を記入します
 
@@ -91,25 +91,25 @@ Voca Tech
 
 ### 一覧表示
 
-[![Image from Gyazo](https://i.gyazo.com/285ac7821f723356e0f6bbc0e422ad99.gif)](https://gyazo.com/285ac7821f723356e0f6bbc0e422ad99)
+[![Image from Gyazo](https://i.gyazo.com/285ac7821f723356e0f6bbc0e422ad99.gif)](https://gyazo.com/285ac7821f723356e0f6bbc0e422ad99.gif)
 
 投稿後は一覧ページにて表示されます。カーソルを説明文に当てることで記述内容を見ることができます。
 
 ### 編集機能
 
-[![Image from Gyazo](https://i.gyazo.com/151d03a2a3c7cd4cb229dec706dda008.gif)](https://gyazo.com/151d03a2a3c7cd4cb229dec706dda008)
+[![Image from Gyazo](https://i.gyazo.com/151d03a2a3c7cd4cb229dec706dda008.gif)](https://gyazo.com/151d03a2a3c7cd4cb229dec706dda008.gif)
 
 一覧ページから編集ページに遷移できます。
 
 ### 削除機能
 
-[![Image from Gyazo](https://i.gyazo.com/b61804713a2368511d535cd8eb964af7.gif)](https://gyazo.com/b61804713a2368511d535cd8eb964af7)
+[![Image from Gyazo](https://i.gyazo.com/b61804713a2368511d535cd8eb964af7.gif)](https://gyazo.com/b61804713a2368511d535cd8eb964af7.gif)
 
 一覧ページから削除することができます
 
 ### 定着度確認機能
 
-[![Image from Gyazo](https://i.gyazo.com/8b90275402ee185ece8139ecf2b33dfc.gif)](https://gyazo.com/8b90275402ee185ece8139ecf2b33dfc)
+[![Image from Gyazo](https://i.gyazo.com/8b90275402ee185ece8139ecf2b33dfc.gif)](https://gyazo.com/8b90275402ee185ece8139ecf2b33dfc.gif)
 自分の定着度合いに対し、◯×を切り替えられます。
 
 ## レポートルーム機能
@@ -136,13 +136,13 @@ Voca Tech
 
 ### レポート詳細ページ
 
-[![Image from Gyazo](https://i.gyazo.com/a3f289caa4b8984b587d063c7019b707.gif)](https://gyazo.com/a3f289caa4b8984b587d063c7019b707)
+[![Image from Gyazo](https://i.gyazo.com/a3f289caa4b8984b587d063c7019b707.gif)](https://gyazo.com/a3f289caa4b8984b587d063c7019b707.gif)
 
 コメントと画像を投稿することができます。
 
 ##  レスポンシブデザイン機能
 
-[![Image from Gyazo](https://i.gyazo.com/20c7b35bc2e73b0e22868ec4353c6d79.gif)](https://gyazo.com/20c7b35bc2e73b0e22868ec4353c6d79)
+[![Image from Gyazo](https://i.gyazo.com/20c7b35bc2e73b0e22868ec4353c6d79.gif)](https://gyazo.com/20c7b35bc2e73b0e22868ec4353c6d79.gif)
 
 スマホでも閲覧できるように画面幅に応じて文字の大きさを変えました。
 
