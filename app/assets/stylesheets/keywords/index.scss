@@ -28,6 +28,10 @@
   margin-left: 30px;
 }
 
+.service-explain {
+  font-size: xx-large;
+}
+
 .service-explain span {
   color: red;
 }
@@ -212,6 +216,10 @@
   
   .service-text {
     font-size: 4vh;
+  }
+
+  .service-explain {
+    display: none;
   }
   //  単語帳とチャットルーム説明
   .words-contents, .rooms-contents {
