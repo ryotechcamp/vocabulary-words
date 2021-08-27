@@ -7,10 +7,10 @@ class User < ApplicationRecord
   validates_format_of :password, with: PASSWORD_REGEX, message: 'is invalid. Include both letters and numbers'
 
   has_one_attached :photo
-  has_many :keywords
+  has_many :keywords, dependent: :destroy
   has_many :tests, dependent: :destroy
-  has_many :rooms
-  has_many :messages
+  has_many :rooms, dependent: :destroy
+  has_many :messages, dependent: :destroy
 
 
   with_options presence: true do
