@@ -9,7 +9,8 @@ require("@rails/activestorage").start()
 require("channels")
 require("@fortawesome/fontawesome-free");
 import '@fortawesome/fontawesome-free/js/all'
-// require("../message")
+require('jquery')
+require('../index')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
