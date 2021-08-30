@@ -198,6 +198,51 @@
   background: linear-gradient(transparent 40%, yellow 40%);
 }
 
+// モーダル表示
+.how-to-use {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}
+
+.modal-content {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: white;
+  border-radius: 10px;
+  width: 60vh;
+  height: 40vh;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-voca {
+  color: red;
+}
+
+.modal-sentence {
+  margin: 15px auto;
+  font-size: 15px;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
 // レスポンシブWEBデザイン
 /* スマホ表示時 */
 @media (max-width: 599px) {
