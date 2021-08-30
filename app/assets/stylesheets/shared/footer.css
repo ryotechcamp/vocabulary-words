@@ -6,6 +6,7 @@
 
 .footer-list {
   float: right;
+  padding-bottom: 1px;
 }
 
 .footer-list-content a{

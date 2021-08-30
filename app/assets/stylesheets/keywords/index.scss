@@ -1,39 +1,36 @@
 //画面上部
 
+.top-part {
+  height: 100vh;
+}
+
 .top-contents {
-  background-image: image-url('try.png');
+  background-image: image-url('toppage.png');
   background-size: cover;
   background-position: center;
   width: 100%;
   height:100vh;
   object-fit: cover;
   color:white;
-  align-items: center;
-  position: relative;
+  display: none;
 }
 
 .service-title {
   font-size: 10vh;
   text-shadow: 5px 5px 5px black;
-  position: absolute;
-  top: 40%;
-  margin-left: 30px;
-}
-
-.service-text {
-  position: absolute;
-  top: 60%;
-  font-size: 5vh;
-  text-shadow: 5px 5px 5px black;
-  margin-left: 30px;
+  text-align: center;
+  line-height: 90vh;
+  display: none;
+  font-weight: bold;
 }
 
 .service-explain {
   font-size: xx-large;
+  font-weight: bold;
 }
 
 .service-explain span {
-  color: red;
+  color: yellow;
 }
 
 //単語帳とチャットルーム説明
@@ -58,7 +55,7 @@
   margin-right: 40px;
 }
 
-.words-title {
+.words-title, .rooms-title {
   font-size: 5vh;
 }
 
@@ -74,7 +71,7 @@
   padding: 10px 20px;
   text-decoration: none;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 5%;
+  border-radius: 10px;
 }
 
 .words-enter-btn:hover, .room-enter-btn:hover {
@@ -201,17 +198,68 @@
   background: linear-gradient(transparent 40%, yellow 40%);
 }
 
+// モーダル表示
+.how-to-use {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}
+
+.modal-content {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: white;
+  border-radius: 10px;
+  width: 60vh;
+  height: 40vh;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-voca {
+  color: red;
+}
+
+.modal-sentence {
+  margin: 15px auto;
+  font-size: 15px;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
 // レスポンシブWEBデザイン
 /* スマホ表示時 */
 @media (max-width: 599px) {
   // 帯部分
+
+  .top-part {
+    height: 50vh;
+  }
+
   .top-contents {
     height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .service-title {
-    font-size: 7vh;
+    font-size: 5vh;
+    line-height: 50vh;
   }
   
   .service-text {
@@ -230,7 +278,7 @@
     font-size: xx-large;
   }
 
-  .words-title, .room-title {
+  .words-title, .rooms-title {
     font-size: 15px;
   }
 
@@ -255,6 +303,12 @@
 
   .user-nickname {
     font-size: 15px;
+  }
+
+  // modal
+  .modal-content {
+    position: absolute;
+    left: 17%;
   }
 
   
