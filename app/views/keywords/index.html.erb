@@ -21,7 +21,9 @@
         <p class = 'words-details'>そんなあなたに<span>自分の弱点だけをまとめた単語帳</span>であなたの勉強をサポートします</p>
         <% if user_signed_in? %>
         <div class = 'btn'>
-          <%= link_to "単語を入力する", new_keyword_path, class: "words-enter-btn" %>
+          <%= link_to new_keyword_path, class: "btn btn-flat" do %>
+            <span>単語を入力する</span>
+          <% end %>
         </div>
         <% end %>
       </div>
@@ -34,11 +36,47 @@
         <p class = 'rooms-details'>そんなあなたに<span>画像、コメントが投稿</span>できるレポートページをお届けします</p>
         <% if user_signed_in? %>
         <div class = 'btn'>
-          <%= link_to "レポートを作成する", new_room_path, class: "room-enter-btn" %>
+          <%= link_to new_room_path, class: "btn btn-flat" do %>
+            <span>レポートを作成する</span>
+          <% end %>
         </div>
         <% end %>
       </div>
       <%= image_tag "meeting.png", class:"meeting-pict" %>
+    </div>
+  </div>
+
+  <%# アコーディオン %>
+   <div class="faq-wrapper">
+    <div class="container">
+      <div class="heading">
+        <h2 class="contents-title">FAQ</h2>
+      </div>
+      <div class="faq">
+        <ul id="faq-list">
+          <li class="faq-list-item">
+            <h3 class="question">VocaTechの由来はなんですか？</h3>
+            <span>+</span>
+            <div class="answer">
+              <p>Vocabulary(単語)とTechnology(ここではプログラミング)を組み合わせたという意味です。</p>
+            </div>
+          </li>
+          <li class="faq-list-item">
+            <h3 class="question">単語帳機能には何が投稿できますか？</h3>
+            <span>+</span>
+            <div class="answer">
+              <p>キーワード、ジャンル、音声、説明文が投稿できます。</p>
+            </div>
+          </li>
+          <li class="faq-list-item">
+            <h3 class="question">レポート機能はどういう時に使いますか？</h3>
+            <span>+</span>
+            <div class="answer">
+              <p>日々の学習や遭遇したエラーの記録等にお使いください。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
