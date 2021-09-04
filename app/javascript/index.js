@@ -13,7 +13,7 @@ $(function () {
     }
   );
 
-  // もーだる表示
+  // モーダル表示
   $('#modal').click(function(){
     $('#how-to-modal').fadeIn();
   });
