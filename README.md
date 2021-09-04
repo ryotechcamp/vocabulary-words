@@ -56,7 +56,7 @@ Voca Tech
 
 トップページ右上から新規登録ができます。
 
-[![Image from Gyazo](https://i.gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e.gif)](https://gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e.gif)
+[![Image from Gyazo](https://i.gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e.gif)](https://gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e)
 
 必要事項を記入します
 
