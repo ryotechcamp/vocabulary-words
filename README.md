@@ -145,7 +145,6 @@ Voca Tech
 [![Image from Gyazo](https://i.gyazo.com/20c7b35bc2e73b0e22868ec4353c6d79.gif)](https://gyazo.com/20c7b35bc2e73b0e22868ec4353c6d79.gif)
 
 スマホでも閲覧できるように画面幅に応じて文字の大きさを変えました。
-[![Image from Gyazo](https://i.gyazo.com/f2eec3c75158a3c76b04400143f8d414.gif)](https://gyazo.com/f2eec3c75158a3c76b04400143f8d414)
 
 # 使用環境
 
