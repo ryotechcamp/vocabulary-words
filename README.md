@@ -52,11 +52,11 @@ Voca Tech
 他のユーザーの投稿を見ることで自分のモチベーションを上げ、他のユーザーから見られることで緊張感を持って取り組むことができます。
 
 ### 新規登録画面
-[![Image from Gyazo](https://i.gyazo.com/95c56df6f7da14512f6c12bef9f48780.jpg)](https://gyazo.com/95c56df6f7da14512f6c12bef9f48780)
+[![Image from Gyazo](https://i.gyazo.com/00dd2eee27ec99ba5c68e6a5b6924439.jpg)](https://gyazo.com/00dd2eee27ec99ba5c68e6a5b6924439)
 
 トップページ右上から新規登録ができます。
 
-[![Image from Gyazo](https://i.gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e.gif)](https://gyazo.com/c2493ebbaacd0a9215d7b21e9a3dd69e)
+[![Image from Gyazo](https://i.gyazo.com/0dc7ab4fef5d68deb8a28e7cddbc8693.gif)](https://gyazo.com/0dc7ab4fef5d68deb8a28e7cddbc8693)
 
 必要事項を記入します
 
