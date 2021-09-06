@@ -90,26 +90,23 @@ Voca Tech
 説明文の記述欄はMarkdown記法を用いることができます。
 
 ### 一覧表示
-
-[![Image from Gyazo](https://i.gyazo.com/285ac7821f723356e0f6bbc0e422ad99.gif)](https://gyazo.com/285ac7821f723356e0f6bbc0e422ad99.gif)
+https://user-images.githubusercontent.com/87416273/132152172-006961ee-da61-4f6e-9429-62a6657493f4.mp4
 
 投稿後は一覧ページにて表示されます。カーソルを説明文に当てることで記述内容を見ることができます。
 
 ### 編集機能
-
-[![Image from Gyazo](https://i.gyazo.com/151d03a2a3c7cd4cb229dec706dda008.gif)](https://gyazo.com/151d03a2a3c7cd4cb229dec706dda008.gif)
+https://user-images.githubusercontent.com/87416273/132152371-6c33eb9d-2e78-4819-9b53-f9ec77587be3.mp4
 
 一覧ページから編集ページに遷移できます。
 
 ### 削除機能
-
-[![Image from Gyazo](https://i.gyazo.com/b61804713a2368511d535cd8eb964af7.gif)](https://gyazo.com/b61804713a2368511d535cd8eb964af7.gif)
+https://user-images.githubusercontent.com/87416273/132152406-3155f37b-85cf-44be-abaa-32a74d4f8ee6.mp4
 
 一覧ページから削除することができます
 
 ### 定着度確認機能
+https://user-images.githubusercontent.com/87416273/132152425-27fc35cc-fed2-40de-a4ba-c30027f54c5f.mp4
 
-[![Image from Gyazo](https://i.gyazo.com/8b90275402ee185ece8139ecf2b33dfc.gif)](https://gyazo.com/8b90275402ee185ece8139ecf2b33dfc.gif)
 自分の定着度合いに対し、◯×を切り替えられます。
 
 ## レポートルーム機能
@@ -136,13 +133,13 @@ Voca Tech
 
 ### レポート詳細ページ
 
-[![Image from Gyazo](https://i.gyazo.com/a3f289caa4b8984b587d063c7019b707.gif)](https://gyazo.com/a3f289caa4b8984b587d063c7019b707.gif)
+https://user-images.githubusercontent.com/87416273/132156170-c2d4b71e-0e32-424e-8865-a091df220d22.mp4
 
 コメントと画像を投稿することができます。
 
 ##  レスポンシブデザイン機能
 
-[![Image from Gyazo](https://i.gyazo.com/20c7b35bc2e73b0e22868ec4353c6d79.gif)](https://gyazo.com/20c7b35bc2e73b0e22868ec4353c6d79.gif)
+https://user-images.githubusercontent.com/87416273/132156682-8a0f7c43-6385-47d7-9fc3-454dc4b0df80.mp4
 
 スマホでも閲覧できるように画面幅に応じて文字の大きさを変えました。
 
