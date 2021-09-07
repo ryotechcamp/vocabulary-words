@@ -18,7 +18,7 @@
   <% @keywords.each do |keyword| %>
     <tr>
       <td class="form-word">
-      <% if keyword.user_id == current_user.id %>
+      <% if user_signed_in? && keyword.user_id == current_user.id %>
         <div class="edit-destroy-list">
           <p><i class="fas fa-caret-down"></i></p> 
           <ul class=edit-destroy>
@@ -53,7 +53,8 @@
           <%= audio_tag keyword.audio_url, :controls => true  %>
         <% end %>  
       </td>
-    <% if keyword.user_id == current_user.id %>
+      <%# チェックボタン %>
+    <% if user_signed_in? && keyword.user_id == current_user.id %>
       <% if current_user.tested_by?(keyword.id) %>
       <div class="check-btn">
         <td>
