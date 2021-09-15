@@ -149,7 +149,7 @@ https://user-images.githubusercontent.com/87416273/132156682-8a0f7c43-6385-47d7-
 Ruby, Ruby on Rails
 
 ## フロントエンド
-HTML, css
+HTML, css, jQuery
 
 ## データベース
 MySQL, SequelPro
